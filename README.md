@@ -16,6 +16,6 @@ The font is adapted from San Francisco Display – Apple’s new typeface for th
 2. Log out and log back in to apply the changes.
 
 ## How does it Work?
-These San Francisco fonts have a special name table with names identical to those of the system fonts. Because the font folder /Library/Fonts takes precedence over the fonts which are in /System/Library/Fonts, these specially crafted fonts are used for the user interface instead of the real system fonts. The original system fonts are not deleted or modified in any way.
+These San Francisco fonts have a special name table with names identical to those of the system fonts. Because the font folder `~/Library/Fonts` takes precedence over the fonts which are in `/System/Library/Fonts`, these specially crafted fonts are used for the user interface instead of the real system fonts. The original system fonts are not deleted or modified in any way.
 
 I assume no copyright over these fonts, nor any liability for improper installation or improper use. Use of these fonts should conform to Apple’s express copyright and rules.
