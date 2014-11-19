@@ -1,8 +1,8 @@
-# YosemiteSanFranciscoFont
+# Yosemite San Francisco Font
 
 Replace Helvetica Neue on your 10.10 Yosemite Mac with San Francisco – the Watch font.
 
-The font is adapted from San Francisco Display – Apple’s new typeface for the Watch. This project was inspired by jenskutilek’s [Fira System Font Replacement](https://github.com/jenskutilek/FiraSystemFontReplacement).
+The font is adapted from San Francisco Display – Apple’s new typeface for the Apple Watch. This project was inspired by jenskutilek’s [Fira System Font Replacement](https://github.com/jenskutilek/FiraSystemFontReplacement).
 
 ![example](http://wellsosaur.us/Ybic/Example.png)
 
