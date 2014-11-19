@@ -2,19 +2,19 @@
 
 Replace Helvetica Neue on your 10.10 Yosemite Mac with San Francisco – the Watch font.
 
-The font is adapted from San Francisco Display – Apple’s new typeface for the Apple Watch. This project was inspired by jenskutilek’s [Fira System Font Replacement](https://github.com/jenskutilek/FiraSystemFontReplacement). The fonts were generated using dtinth's [Yosemite System Font Patcher](https://github.com/dtinth/YosemiteSystemFontPatcher).
+The font is adapted from San Francisco Text – Apple’s new typeface for the Apple Watch. This project was inspired by jenskutilek’s [Fira System Font Replacement](https://github.com/jenskutilek/FiraSystemFontReplacement). The fonts were generated using dtinth's [Yosemite System Font Patcher](https://github.com/dtinth/YosemiteSystemFontPatcher).
 
 ![example](http://wellsosaur.us/Ybic/Example.png)
 
 ## How to Install:
 1. [Download the zipped font files](https://raw.githubusercontent.com/wellsriley/YosemiteSanFranciscoFont/master/SystemSanFrancisco.zip).
 2. Copy the 5 font files to `/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)*
-3. Run `sudo chown root:wheel /Library/Fonts/System\ San\ Francisco\ Display*` to set the proper ownership of the font files.
+3. Run `sudo chown root:wheel /Library/Fonts/System\ San\ Francisco*` to set the proper ownership of the font files.
 4. Repair Disk Permissions `diskutil repairPermissions /` (for good measure)
 5. Log out and log back in to apply the changes.
 
 ## How to Uninstall:
-1. Navigate to `/Library/Fonts` on your Mac and delete the 5 files starting with `System San Francisco Display`.
+1. Navigate to `/Library/Fonts` on your Mac and delete the 5 files starting with `System San Francisco`.
 2. Log out and log back in to apply the changes.
 
 ## How does it Work?
