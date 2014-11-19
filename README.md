@@ -8,13 +8,13 @@ The font is adapted from San Francisco – Apple’s new typeface for the Apple 
 
 ## How to Install:
 1. [Download the zipped font files](https://github.com/wellsriley/YosemiteSanFranciscoFont/archive/master.zip).
-2. Copy the 6 font files to `/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)*
+2. Copy the 5 font files to `/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)*
 3. Run `sudo chown root:wheel /Library/Fonts/System\ San\ Francisco*` to set the proper ownership of the font files.
 4. Repair Disk Permissions `diskutil repairPermissions /` (for good measure)
 5. Log out and log back in to apply the changes.
 
 ## How to Uninstall:
-1. Navigate to `/Library/Fonts` on your Mac and delete the 6 files starting with `System San Francisco`.
+1. Navigate to `/Library/Fonts` on your Mac and delete the files starting with `System San Francisco`.
 2. Log out and log back in to apply the changes.
 
 ## How does it Work?
@@ -25,3 +25,4 @@ These San Francisco fonts have a special name table with names identical to thos
 2. I assume no liability for improper installation or improper use. 
 3. You must be a registered Apple Developer to use these fonts. Do not download if you don't have a paid Apple Developer Program account.
 4. These fonts will *only* work as Helvetica Neue system replacement fonts. If you attempt to use them differently, they **will not work**!
+5. While San Francisco “Text” is recommended by Apple for smaller sizes (mainly user interfaces), the “Display” face has much better letterspacing and kerning. If you prefer the Text face, install the files in the “Text Face (alternate)” folder.
