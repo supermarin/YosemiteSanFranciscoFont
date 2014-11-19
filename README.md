@@ -20,4 +20,8 @@ The font is adapted from San Francisco – Apple’s new typeface for the Apple 
 ## How does it Work?
 These San Francisco fonts have a special name table with names identical to those of the system fonts. Because the font folder `/Library/Fonts` takes precedence over the fonts which are in `/System/Library/Fonts`, these specially crafted fonts are used for the user interface instead of the real system fonts. The original system fonts are not deleted or modified in any way.
 
-I assume no copyright over these fonts, nor any liability for improper installation or improper use. Use of these fonts should conform to Apple’s express copyright and rules.
+## Important Notes:
+1. I assume no copyright over these fonts.
+2. I assume no liability for improper installation or improper use. 
+3. You must be a registered Apple Developer to use these fonts. Do not download if you don't have a paid Apple Developer Program account.
+4. These fonts will *only* work as Helvetica Neue system replacement fonts. If you attempt to use them differently, they **will not work**!
