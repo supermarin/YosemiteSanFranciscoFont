@@ -10,7 +10,7 @@ The font is adapted from San Francisco Display – Apple’s new typeface for th
 1. [Download the zipped font files](https://raw.githubusercontent.com/wellsriley/YosemiteSanFranciscoFont/master/SystemSanFrancisco.zip).
 2. Copy the 5 font files to `/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)*
 3. Run `sudo chown root:wheel /Library/Fonts/System\ San\ Francisco\ Display\*` to set the proper ownership of the font files.
-4. Repair Disk Permissions `diskutil repairPermissions /`
+4. Repair Disk Permissions `diskutil repairPermissions /` (for good measure)
 5. Log out and log back in to apply the changes.
 
 ## How to Uninstall:
