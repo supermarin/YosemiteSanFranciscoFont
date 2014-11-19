@@ -5,9 +5,11 @@ Replace Helvetica Neue on your 10.10 Yosemite Mac with San Francisco – the 
 
 The font is adapted from San Francisco Display – Apple’s new typeface for the Watch. This project was inspired by jenskutilek’s [Fira System Font Replacement](https://github.com/jenskutilek/FiraSystemFontReplacement).
 
+![example](http://wellsosaur.us/Ybic/Example.png)
+
 How to Install:
 ======================
-1. Download the zipped font files: <https://raw.githubusercontent.com/wellsriley/YosemiteSanFranciscoFont/master/SystemSanFrancisco.zip>
+1. [Download the zipped font files](https://raw.githubusercontent.com/wellsriley/YosemiteSanFranciscoFont/master/SystemSanFrancisco.zip).
 2. Copy the 5 font files to `~/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)*
 3. Log out and log back in to apply the changes.
 
