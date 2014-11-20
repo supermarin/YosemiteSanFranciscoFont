@@ -9,7 +9,7 @@ The font is adapted from San Francisco – Apple’s new typeface for the Apple 
 ## Easy Install
 Run this command from **Terminal.app**:
 ```bash
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/wellsriley/YosemiteSanFranciscoFont/master/install)"
+ruby -e "$(curl -fsSL https://raw.github.com/wellsriley/YosemiteSanFranciscoFont/master/install)"
 ```
 
 ### Manual Install:
