@@ -6,7 +6,13 @@ The font is adapted from San Francisco – Apple’s new typeface for the Apple 
 
 ![example](http://wellsosaur.us/Ybic/Example.png)
 
-## How to Install:
+## Easy Install
+Run this command from **Terminal.app**:
+```bash
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/wellsriley/YosemiteSanFranciscoFont/master/install)"
+```
+
+## Manual Install:
 1. [Download the zipped font files](https://github.com/wellsriley/YosemiteSanFranciscoFont/archive/master.zip).
 2. Copy the 5 font files to `/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)* **Important note: this is the `/Library/Fonts` folder, not `~/Library/Fonts`.**
 3. Run `sudo chown root:wheel /Library/Fonts/System\ San\ Francisco*` to set the proper ownership of the font files.
