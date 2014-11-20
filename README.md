@@ -12,21 +12,21 @@ Run this command from **Terminal.app**:
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/wellsriley/YosemiteSanFranciscoFont/master/install)"
 ```
 
-## Manual Install:
+### Manual Install:
 1. [Download the zipped font files](https://github.com/wellsriley/YosemiteSanFranciscoFont/archive/master.zip).
 2. Copy the 5 font files to `/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)* **Important note: this is the `/Library/Fonts` folder, not `~/Library/Fonts`.**
 3. Run `sudo chown root:wheel /Library/Fonts/System\ San\ Francisco*` to set the proper ownership of the font files.
 4. Repair Disk Permissions `diskutil repairPermissions /` (for good measure)
 5. Log out and log back in to apply the changes.
 
-## How to Uninstall:
+### How to Uninstall:
 1. Navigate to `/Library/Fonts` on your Mac and delete the files starting with `System San Francisco`.
 2. Log out and log back in to apply the changes.
 
-## How does it Work?
+### How does it Work?
 These San Francisco fonts have a special name table with names identical to those of the system fonts. Because the font folder `/Library/Fonts` takes precedence over the fonts which are in `/System/Library/Fonts`, these specially crafted fonts are used for the user interface instead of the real system fonts. The original system fonts are not deleted or modified in any way.
 
-## Important Notes:
+### Important Notes:
 1. I assume no copyright over these fonts.
 2. I assume no liability for improper installation or improper use.
 3. You must be a registered Apple Developer to use these fonts. Do not download if you don't have a paid Apple Developer Program account.
