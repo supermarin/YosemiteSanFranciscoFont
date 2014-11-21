@@ -89,7 +89,7 @@ EOABORT
 
 unless Dir["#{SF_PREFIX}/System\ San\ Francisco*"].empty?
   puts
-  warn "It appears San Francisco System is already installed."
+  ohai "It appears San Francisco System is already installed."
   puts
   warn "If you want to uninstall, run this command:"
   warn "sudo rm -rf #{SF_PREFIX}/System\\ San\\ Francisco*"
