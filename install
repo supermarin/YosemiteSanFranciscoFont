@@ -115,10 +115,7 @@ end
 ohai "Downloading and installing San Francisco System..."
 
 Dir.chdir SF_PREFIX do
-  curl_flags = "fsSL"
-  curl_flags << "k" if macos_version <= "10.5"
-
-  system "/bin/bash -o pipefail -c '/usr/bin/curl -#{curl_flags} #{SF_REPO}/tarball/master | /usr/bin/tar xz -m --strip 1 --include='*System*' --exclude='*Text*''"
+  system "/bin/bash -o pipefail -c '/usr/bin/curl -fsSL #{SF_REPO}/tarball/master | /usr/bin/tar xz -m --strip 1 --include='*System*' --exclude='*Text*''"
   ohai "Moving files into /Library/Fonts..."
   system "/usr/bin/sudo chown root:wheel /Library/Fonts/System\\ San\\ Francisco*"
   ohai "Repairing Disk Permissions (Just to be safe)..."
