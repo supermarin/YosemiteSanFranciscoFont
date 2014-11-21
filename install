@@ -47,14 +47,14 @@ end
 
 def wait_for_user
   puts
-  ohai "Press RETURN to continue or any other key to abort"
+  ohai "Press RETURN to continue or any other key to abort."
   c = getc
   # we test for \r and \n because some stuff does \r instead
   abort unless c == 13 or c == 10
 end
 
 def wait_for_reinstall
-  ohai "Press RETURN to reinstall or any other key to abort"
+  ohai "Press RETURN to reinstall or any other key to abort."
   c = getc
   # we test for \r and \n because some stuff does \r instead
   abort unless c == 13 or c == 10
