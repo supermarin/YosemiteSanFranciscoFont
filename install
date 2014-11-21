@@ -70,14 +70,7 @@ def macos_version
   @macos_version ||= `/usr/bin/sw_vers -productVersion`.chomp[/10\.\d+/].extend(Version)
 end
 
-# Invalidate sudo timestamp before exiting
-at_exit { Kernel.system "/usr/bin/sudo", "-k" }
-
-# The block form of Dir.chdir fails later if Dir.CWD doesn't exist which I
-# guess is fair enough. Also sudo prints a warning message for no good reason
-Dir.chdir "/usr"
-
-####################################################################### script
+#######################################################################
 abort "San Francisco is only available on OS X 10.10 Yosemite." if /linux/i === RUBY_PLATFORM
 abort "San Francisco is only available on OS X 10.10 Yosemite." if macos_version < "10.10"
 abort "Don't run this as root!" if Process.uid == 0
@@ -95,6 +88,7 @@ unless Dir["#{SF_PREFIX}/System\ San\ Francisco*"].empty?
   warn "sudo rm -rf #{SF_PREFIX}/System\\ San\\ Francisco*"
   puts
   wait_for_reinstall if STDIN.tty?
+  system "sudo -v"
   ohai "Preparing the old version for update..."
   system "/usr/bin/sudo chown #{ENV['USER']}:staff /Library/Fonts/System\\ San\\ Francisco*"
 end
@@ -112,18 +106,19 @@ if Dir["#{SF_PREFIX}/System\ San\ Francisco*"].empty?
   system "/usr/bin/sudo -v"
 end
 
-ohai "Downloading and installing San Francisco System..."
-
 Dir.chdir SF_PREFIX do
+  ohai "Downloading and installing San Francisco System..."
   system "/bin/bash -o pipefail -c '/usr/bin/curl -fsSL #{SF_REPO}/tarball/master | /usr/bin/tar xz -m --strip 1 --include='*System*' --exclude='*Text*''"
-  ohai "Moving files into /Library/Fonts..."
+  ohai "Setting file ownership..."
   system "/usr/bin/sudo chown root:wheel /Library/Fonts/System\\ San\\ Francisco*"
+  ohai "Clearing OS X Font Cache..."
+  system "sudo /usr/bin/atsutil databases -remove"
   ohai "Repairing Disk Permissions (Just to be safe)..."
   system "diskutil repairPermissions /"
 end
 
 ohai "Installation successful!"
-ohai "Next steps"
-
-puts "Restart your computer for the changes to take effect."
-puts "Need help? Visit https://github.com/wellsriley/YosemiteSanFranciscoFont"
+puts
+warn "Next steps:"
+warn "Restart your computer for the changes to take effect."
+warn "Need help? Visit https://github.com/wellsriley/YosemiteSanFranciscoFont"
