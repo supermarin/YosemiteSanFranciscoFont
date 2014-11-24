@@ -41,6 +41,7 @@ If you're concerned about the authenticity of the `install` script, you can clon
 * Get proof that it really was authored by [Wells Riley](http://wells.ee/pgp).
 
 `$ gpg --recv-key D349C578`
+
 `$ gpg --verify --with-fingerprint install.sig install`
 
 And then verify the resulting signature's fingerprint against Wells Riley's published fingerprint at [http://wells.ee/pgp](http://wells.ee/pgp).
