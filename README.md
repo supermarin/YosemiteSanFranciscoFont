@@ -33,3 +33,14 @@ These San Francisco fonts have a special name table with names identical to thos
 3. You must be a registered Apple Developer to use these fonts. Do not download if you don't have a paid Apple Developer Program account.
 4. These fonts will *only* work as Helvetica Neue system replacement fonts. If you attempt to use them differently, they **will not work**!
 5. While San Francisco “Text” is recommended by Apple for smaller sizes (mainly user interfaces), the “Display” face has much better letterspacing and kerning. If you prefer the Text face, install the files in the “Text Face (alternate)” folder.
+
+### Security
+If you're concerned about the authenticity of the `install` script, you can clone this repo and verify the installer with my GPG signature. You should find a file named `install.sig` which you can use to:
+
+* Verify that `install` hasn't been tampered with, and
+* Get proof that it really was authored by [Wells Riley](http://wells.ee/pgp).
+
+`$ gpg --recv-key D349C578`
+`$ gpg --verify --with-fingerprint install.sig install`
+
+And then verify the resulting signature's fingerprint against Wells Riley's published fingerprint at [http://wells.ee/pgp](http://wells.ee/pgp).
