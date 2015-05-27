@@ -2,7 +2,7 @@
 # Adapted from the Homebrew installer: http://brew.sh
 
 SF_PREFIX = '/Library/Fonts'
-SF_REPO = 'https://github.com/wellsriley/YosemiteSanFranciscoFont'
+SF_REPO = 'https://github.com/supermarin/YosemiteSanFranciscoFont'
 
 module Tty extend self
   def blue; bold 34; end
@@ -121,4 +121,4 @@ ohai "Installation successful!"
 puts
 warn "Next steps:"
 warn "Restart your computer for the changes to take effect."
-warn "Need help? Visit https://github.com/wellsriley/YosemiteSanFranciscoFont"
+warn "Need help? Visit https://github.com/supermarin/YosemiteSanFranciscoFont"
