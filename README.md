@@ -9,11 +9,11 @@ The font is adapted from San Francisco – Apple’s new typeface for the Apple 
 ## Easy Install
 Run this command from **Terminal.app**:
 ```bash
-ruby -e "$(curl -fsSL https://raw.github.com/wellsriley/YosemiteSanFranciscoFont/master/install)"
+ruby -e "$(curl -fsSL https://raw.github.com/supermarin/YosemiteSanFranciscoFont/master/install)"
 ```
 
 ### Manual Install:
-1. [Download the zipped font files](https://github.com/wellsriley/YosemiteSanFranciscoFont/archive/master.zip).
+1. [Download the zipped font files](https://github.com/supermarin/YosemiteSanFranciscoFont/archive/master.zip).
 2. Copy the 5 font files to `/Library/Fonts` on your Mac. *(protip: press `cmd+shift+g` while in Finder to type the path directly.)* **Important note: this is the `/Library/Fonts` folder, not `~/Library/Fonts`.**
 3. Run `sudo chown root:wheel /Library/Fonts/System\ San\ Francisco*` to set the proper ownership of the font files.
 4. Run `sudo atsutil databases -remove` to clear the OS X Font Cache
