@@ -97,11 +97,7 @@ if Dir["#{SF_PREFIX}/System\ San\ Francisco*"].empty?
   puts
   ohai "This script will install:"
   puts
-  puts "System San Francisco Display Bold.ttf"
-  puts "System San Francisco Display Medium.ttf"
-  puts "System San Francisco Display Regular.ttf"
-  puts "System San Francisco Display Thin.ttf"
-  puts "System San Francisco Display Ultralight.ttf"
+  puts Dir.glob('*.otf').join("\n")
   wait_for_user if STDIN.tty?
   system "/usr/bin/sudo -v"
 end
