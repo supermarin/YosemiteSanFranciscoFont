@@ -97,7 +97,7 @@ if Dir["#{SF_PREFIX}/System\ San\ Francisco*"].empty?
   puts
   ohai "This script will install:"
   puts
-  puts Dir.glob('*.otf').join("\n")
+  puts Dir.glob('*.ttf').join("\n")
   wait_for_user if STDIN.tty?
   system "/usr/bin/sudo -v"
 end
@@ -117,4 +117,4 @@ ohai "Installation successful!"
 puts
 warn "Next steps:"
 warn "Restart your computer for the changes to take effect."
-warn "Need help? Visit https://github.com/supermarin/YosemiteSanFranciscoFont"
+warn "Need help? Visit #{SF_REPO}"
